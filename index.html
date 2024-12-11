@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id='container'>
+            <div>
+                <input id="input-display" type="text">
+                <input id="input-calc" type="text" readonly>
+            </div>
+            <div id="all-buttons">
+                <button type="button" class="green" onclick="clearDisplay()">C</button>
+                <button type="button" class="blue" onclick="input('(')">(</button>
+                <button type="button" class="blue" onclick="input(')')">)</button>
+                <button type="button" class="blue divide" onclick="input('/')">÷</button>
+
+                <button type="button" onclick="input('7')">7</button>
+                <button type="button" onclick="input('8')">8</button>
+                <button type="button" onclick="input('9')">9</button>
+                <button type="button" class="blue star" onclick="input('*')">x</button>
+
+                <button type="button" onclick="input('4')">4</button>
+                <button type="button" onclick="input('5')">5</button>
+                <button type="button" onclick="input('6')">6</button>
+                <button type="button" class="blue minus" onclick="input('-')">-</button>
+
+                <button type="button" onclick="input('1')">1</button>
+                <button type="button" onclick="input('2')">2</button>
+                <button type="button" onclick="input('3')">3</button>
+                <button type="button" class="blue" onclick="input('+')">+</button>
+
+                <button type="button" onclick="input('0')">0</button>
+                <button type="button" onclick="input('.')">.</button>
+                <button type="button" onclick="deleteLast()">←</button>
+                <button type="button" class="dark-blue" onclick="onEqualClick()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
